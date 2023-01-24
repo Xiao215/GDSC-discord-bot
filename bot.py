@@ -69,7 +69,7 @@ async def price(ctx, question):
         frequency_penalty=0.0,
         presence_penalty=0.0,
     )
-    await ctx.send(response["choices"][0]["text"])
+    await ctx.send("```"+response["choices"][0]["text"]+"```")
 
 
 @bot.event
